@@ -3,12 +3,26 @@
     align-items: center;
     border-bottom: 1px solid #E3E3E3;
     padding-bottom: 24px;
-    width: calc((100% - 52px) / 3);
+    gap: 24px;
+}
+
+.dropdown-product-link-container {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #E3E3E3;
+    padding-bottom: 12px;
     gap: 24px;
 }
 
 .dropdown-product-info .dropdown-product-info-title .dropdown-product-info-title-icon {
     transition: var(--anumation-duration);
+    margin-left: 8px;
+    width: 10px;
+    height: 10px;
+}
+
+.dropdown-product-info .dropdown-product-info-title:hover {
+    color: var(--app-color);
 }
 
 .dropdown-product-container .dropdown-product-logo,
