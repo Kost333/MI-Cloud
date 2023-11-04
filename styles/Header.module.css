@@ -1,0 +1,120 @@
+.header {
+    width: 100%;
+    height: 79px;
+    padding: 17px 120px;
+    background: var(--header-bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .menu ul {
+    display: flex;
+    gap: 32px;
+}
+
+.header .menu ul li {
+    list-style-type: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: var(--anumation-duration);
+}
+
+.header .menu ul li .menu-item-title {
+    transition: var(--anumation-duration);
+}
+
+.header .menu ul .menu-item:hover .menu-item-title {
+    color: var(--app-color);
+}
+
+.header .menu ul .dropdown-container .dropdown-content {
+    position: absolute;
+    left: 50%;
+    background: transparent;
+    width: 70%;
+    height: auto;
+    top: 50px;
+    transform: translateX(-50%);
+    display: none;
+    transition: var(--anumation-duration);
+}
+
+.header .menu ul .dropdown-container .dropdown-content .dropdown-visible-content {
+    margin-top: 30px;
+    width: 100%;
+    background: white;
+    border-radius: 0 0 32px 32px;
+    padding: 72px 51px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    column-gap: 24px;
+}
+
+.header .menu ul .dropdown-container:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+}
+
+
+.header .menu ul .dropdown-container:hover .dropdown-icon {
+    transform: rotateZ(315deg);
+    border-color: var(--app-color);
+}
+
+.header .menu ul .dropdown-container .dropdown-icon {
+    width: 7px;
+    height: 7px;
+    margin: 11px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    transform: rotateZ(135deg);
+}
+
+.header .menu ul .dropdown-container .dropdown-icon {
+    width: 7px;
+    height: 7px;
+    margin: 11px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    transform: rotateZ(135deg);
+    transition: var(--anumation-duration);
+}
+
+.header .authentication {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.header .authentication span {
+    color: #242424;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: var(--anumation-duration);
+}
+
+.header .authentication span:hover {
+    color: var(--app-color);
+}
+
+.header .authentication button {
+    height: 48px;
+    padding: 12px 48px;
+    background: linear-gradient(92deg, #F5876B 0.83%, rgba(251, 170, 107, 0.74) 95.33%);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    border-radius: 30px;
+    transition: var(--anumation-duration);
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.header .authentication button:hover {
+    border: 1px solid black;
+}

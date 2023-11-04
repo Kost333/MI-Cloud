@@ -1,0 +1,5 @@
+:root {
+    --app-color: #0072FC;
+    --header-bg: linear-gradient(90deg, #BFDAF5 0%, #C8D6FF 100%);
+    --anumation-duration: .3s all;
+}
