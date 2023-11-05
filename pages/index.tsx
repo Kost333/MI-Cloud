@@ -1,7 +1,6 @@
 import React, {Suspense} from "react";
 import styles from "@/styles/Home.module.css"
 import Header from "@/components/header/header";
-import StatisticsContainer from "@/components/main/StatisticsContainer";
 import GlobalInformation from "@/components/main/GlobalInformation";
 import OurProducts from "@/components/main/OurProducts";
 import WhatCanWeContainer from "@/components/main/WhatCanWeContainer";
@@ -29,10 +28,8 @@ export default function Home() {
                 <TheEasiestWayContainer/>
                 <FeaturedClientsStories/>
                 <QuestionsContainer/>
-
+                <AreYouReadyContainer/>
             </div>
-            <StatisticsContainer/>
-            <AreYouReadyContainer/>
             <Footer/>
         </Suspense>
     );
