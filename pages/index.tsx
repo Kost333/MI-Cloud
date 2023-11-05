@@ -1,34 +1,39 @@
-import React from "react";
+import React, {Suspense} from "react";
 import styles from "@/styles/Home.module.css"
 import Header from "@/components/header/header";
 import StatisticsContainer from "@/components/main/StatisticsContainer";
-import OutProductsContainer from "@/components/main/OutProductsContainer";
-import WhatWeCanContainer from "@/components/main/WhatWeCanContainer";
-import ServicesWeProvideContainer from "@/components/main/ServicesWeProvideContainer";
+import GlobalInformation from "@/components/main/GlobalInformation";
+import OurProducts from "@/components/main/OurProducts";
+import WhatCanWeContainer from "@/components/main/WhatCanWeContainer";
 import TheEasiestWayContainer from "@/components/main/TheEasiestWayContainer";
 import QuestionsContainer from "@/components/main/QuestionsContainer";
 import AreYouReadyContainer from "@/components/main/AreYouReadyContainer";
 import Footer from "@/components/footer/footer";
 import NavContainer from "@/components/main/NavContainer";
+import AboutUs from "@/components/main/AboutUs";
+import FeaturedClientsStories from "@/components/main/FeaturedClientsStories";
 
 export default function Home() {
 
     return (
-        <>
+        <Suspense fallback="loading...">
             <div className={styles['first-content']}>
                 <Header/>
                 <NavContainer/>
             </div>
             <div className={styles['second-content']}>
-                <OutProductsContainer/>
-                <WhatWeCanContainer/>
+                <GlobalInformation/>
+                <OurProducts/>
+                <AboutUs/>
+                <WhatCanWeContainer/>
+                <TheEasiestWayContainer/>
+                <FeaturedClientsStories/>
+                <QuestionsContainer/>
+
             </div>
             <StatisticsContainer/>
-            <ServicesWeProvideContainer/>
-            <TheEasiestWayContainer/>
-            <QuestionsContainer/>
             <AreYouReadyContainer/>
             <Footer/>
-        </>
+        </Suspense>
     );
 };

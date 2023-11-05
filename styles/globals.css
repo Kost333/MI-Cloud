@@ -3,8 +3,8 @@
 @import "header/Header-dropdown-item.module.css";
 @import "./main/NavContainer.module.css";
 @import "./main/Statistics.module.css";
-@import "./main/OutProducts.module.css";
-@import "./main/WhatWeCan.module.css";
+@import "main/GlobalInformation.module.css";
+@import "main/OurProducts.module.css";
 
 * {
     margin: 0;

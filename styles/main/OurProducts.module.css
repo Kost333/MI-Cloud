@@ -1,0 +1,90 @@
+.our-products-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 47px;
+}
+
+.our-products-container .our-products-title {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.our-products-container .our-products-title h3 {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.16px;
+}
+
+.our-products-container .our-products-title h4 {
+    color: #FFF;
+    font-size: 38px;
+    font-weight: 500;
+}
+
+.our-products-container .our-products-content {
+    display: flex;
+    gap: 24px;
+    column-gap: 24px;
+    flex-wrap: wrap-reverse;
+}
+
+.our-products-container .our-products-content .our-products-card {
+    border-radius: 8px;
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(2px);
+    padding: 48px 32px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 32%;
+}
+
+.our-products-container .our-products-content .our-products-card .our-products-card-image {
+    align-self: center;
+    width: 140px;
+    transition: var(--anumation-duration);
+}
+
+.our-products-container .our-products-content .our-products-card .our-products-card-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+    transition: var(--anumation-duration);
+    top: 30px;
+}
+
+.our-products-container .our-products-content .our-products-card .our-products-card-info-container .our-products-card-info-title {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.our-products-container .our-products-content .our-products-card .our-products-card-info-container .our-products-card-info-description {
+    color: #CCDAE7;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.our-products-container .our-products-content .our-products-card .our-products-card-info-container .our-products-card-info-button {
+    width: 100%;
+    opacity: .1;
+}
+
+.our-products-container .our-products-content .our-products-card:hover .our-products-card-image {
+    transform: scale(.8);
+}
+
+.our-products-container .our-products-content .our-products-card:hover .our-products-card-info-button {
+    opacity: 1;
+}
+
+.our-products-container .our-products-content .our-products-card:hover .our-products-card-info-container {
+    top: 0;
+}

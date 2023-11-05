@@ -1,0 +1,80 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container h2 {
+    color: #FFF;
+    text-align: center;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.container .info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.container .info-container .info {
+    display: flex;
+    width: 384px;
+    padding: 52px 25px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 16px;
+    border: 1px solid #D8D8D8;
+}
+
+.container .info-container .info .stars {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 6px;
+}
+
+.container .info-container .info p {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+
+
+.container .info-container .info .profileInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .info-container .info .profileInfo .ProfileDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.container .info-container .info .profileInfo .ProfileDescription h4 {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.container .info-container .info .profileInfo .ProfileDescription h6 {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}

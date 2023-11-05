@@ -21,6 +21,10 @@
     transition: var(--anumation-duration);
 }
 
+.header .menu ul li span {
+    white-space: nowrap;
+}
+
 .header .menu ul li .menu-item-title {
     transition: var(--anumation-duration);
 }
@@ -105,6 +109,7 @@
     font-weight: 400;
     cursor: pointer;
     transition: var(--anumation-duration);
+    white-space: nowrap;
 }
 
 .header .authentication span:hover {
@@ -123,6 +128,7 @@
     transition: var(--anumation-duration);
     border: 1px solid transparent;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .header .authentication button:hover {

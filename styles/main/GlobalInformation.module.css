@@ -1,10 +1,10 @@
-.out-products-container {
+.global-information-container {
     display: flex;
     gap: 24px;
     column-gap: 24px;
     flex-wrap: wrap;
 }
-.out-products-container .out_product {
+.global-information-container .global-information {
     display: flex;
     gap: 16px;
     align-items: center;
@@ -15,7 +15,7 @@
     border: 1px solid #212E74;
 }
 
-.out-products-container .out_product span {
+.global-information-container .global-information span {
     color: #FFF;
     font-size: 24px;
     font-weight: 400;

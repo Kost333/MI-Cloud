@@ -1,11 +1,5 @@
 import React from "react";
 import styles from "@/styles/main/NavContainer.module.css";
-import dynamic from 'next/dynamic'
-
-const Model = dynamic(
-    () => import('./globe/Model'),
-    { ssr: false }
-)
 
 const NavContainer = () => {
 
@@ -19,7 +13,7 @@ const NavContainer = () => {
                 </div>
                 <button className="orange-btn">Get Started</button>
             </div>
-            <Model />
+
         </nav>
     );
 
