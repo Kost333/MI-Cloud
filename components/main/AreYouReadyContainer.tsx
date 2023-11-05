@@ -7,8 +7,8 @@ const AreYouReadyContainer = () => {
         <div className={styles["container"]}>
             <h2>Are you ready?</h2>
             <div>
-                <button>Request a quote</button>
-                <button>Get Started</button>
+                <button className="blue-btn">Request a quote</button>
+                <button className="blue-btn">Get Started</button>
             </div>
         </div>
     );

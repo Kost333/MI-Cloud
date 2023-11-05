@@ -116,25 +116,6 @@
     color: var(--app-color);
 }
 
-.header .authentication button {
-    height: 48px;
-    padding: 12px 48px;
-    background: linear-gradient(92deg, #F5876B 0.83%, rgba(251, 170, 107, 0.74) 95.33%);
-    color: white;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-    border-radius: 30px;
-    transition: var(--anumation-duration);
-    border: 1px solid transparent;
-    cursor: pointer;
-    white-space: nowrap;
-}
-
-.header .authentication button:hover {
-    border: 1px solid black;
-}
-
 @media (min-width: 768px) {
     .header .menu ul .dropdown-container .dropdown-content {
         max-width: 1024px;

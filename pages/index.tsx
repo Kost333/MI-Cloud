@@ -29,8 +29,8 @@ export default function Home() {
                 <FeaturedClientsStories/>
                 <QuestionsContainer/>
                 <AreYouReadyContainer/>
+                <Footer/>
             </div>
-            <Footer/>
         </Suspense>
     );
 };

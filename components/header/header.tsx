@@ -26,13 +26,16 @@ const Header = () => {
                                     {productsArray.slice(0, 3).map((_, index) => (
                                         <div key={index} className={dropdownStyles['dropdown-product-container']}>
                                             <div className={dropdownStyles['dropdown-product-logo']}>
-                                                <Image src="/assets/header/product.svg" alt="product" width={96} height={91}/>
+                                                <Image src="/assets/header/product.svg" alt="product" width={96}
+                                                       height={91}/>
                                             </div>
                                             <div className={dropdownStyles['dropdown-product-info']}>
                                                 <div className={dropdownStyles['dropdown-product-info-title']}>
                                                     <span>Virtual servers</span>
-                                                    <Image className={dropdownStyles['dropdown-product-info-title-icon']} width={15} height={0}
-                                                         src="/assets/header/arrow-product.svg" alt="product_arrow"/>
+                                                    <Image
+                                                        className={dropdownStyles['dropdown-product-info-title-icon']}
+                                                        width={15} height={0}
+                                                        src="/assets/header/arrow-product.svg" alt="product_arrow"/>
                                                 </div>
                                                 <p className={dropdownStyles['dropdown-product-info-description']}>with
                                                     GPUs</p>
@@ -47,13 +50,16 @@ const Header = () => {
                                     {productsArray.slice(3, 6).map((_, index) => (
                                         <div key={index} className={dropdownStyles['dropdown-product-container']}>
                                             <div className={dropdownStyles['dropdown-product-logo']}>
-                                                <Image src="/assets/header/product.svg" alt="product" width={96} height={91}/>
+                                                <Image src="/assets/header/product.svg" alt="product" width={96}
+                                                       height={91}/>
                                             </div>
                                             <div className={dropdownStyles['dropdown-product-info']}>
                                                 <div className={dropdownStyles['dropdown-product-info-title']}>
                                                     <span>Virtual servers</span>
-                                                    <Image className={dropdownStyles['dropdown-product-info-title-icon']} width={15} height={0}
-                                                         src="/assets/header/arrow-product.svg" alt="product_arrow"/>
+                                                    <Image
+                                                        className={dropdownStyles['dropdown-product-info-title-icon']}
+                                                        width={15} height={0}
+                                                        src="/assets/header/arrow-product.svg" alt="product_arrow"/>
                                                 </div>
                                                 <p className={dropdownStyles['dropdown-product-info-description']}>with
                                                     GPUs</p>
@@ -75,13 +81,15 @@ const Header = () => {
                                 {servicesArray.map((_, index) => (
                                     <div key={index} className={dropdownStyles['dropdown-product-container']}>
                                         <div className={dropdownStyles['dropdown-product-logo']}>
-                                            <Image src="/assets/header/product.svg" alt="product" width={96} height={91}/>
+                                            <Image src="/assets/header/product.svg" alt="product" width={96}
+                                                   height={91}/>
                                         </div>
                                         <div className={dropdownStyles['dropdown-product-info']}>
                                             <div className={dropdownStyles['dropdown-product-info-title']}>
                                                 <span>Virtual servers</span>
-                                                <Image className={dropdownStyles['dropdown-product-info-title-icon']} width={15} height={0}
-                                                     src="/assets/header/arrow-product.svg" alt="product_arrow"/>
+                                                <Image className={dropdownStyles['dropdown-product-info-title-icon']}
+                                                       width={15} height={0}
+                                                       src="/assets/header/arrow-product.svg" alt="product_arrow"/>
                                             </div>
                                             <p className={dropdownStyles['dropdown-product-info-description']}>with
                                                 GPUs</p>
@@ -103,8 +111,9 @@ const Header = () => {
                                     <div className={dropdownStyles['dropdown-product-info']}>
                                         <div className={dropdownStyles['dropdown-product-info-title']}>
                                             <span>Virtual servers</span>
-                                            <Image className={dropdownStyles['dropdown-product-info-title-icon']} width={96} height={91}
-                                                 src="/assets/header/arrow-product.svg" alt="product_arrow"/>
+                                            <Image className={dropdownStyles['dropdown-product-info-title-icon']}
+                                                   width={96} height={91}
+                                                   src="/assets/header/arrow-product.svg" alt="product_arrow"/>
                                         </div>
                                     </div>
                                 </div>
@@ -112,8 +121,9 @@ const Header = () => {
                                     <div className={dropdownStyles['dropdown-product-info']}>
                                         <div className={dropdownStyles['dropdown-product-info-title']}>
                                             <span>Virtual servers</span>
-                                            <Image className={dropdownStyles['dropdown-product-info-title-icon']} width={15} height={0}
-                                                 src="/assets/header/arrow-product.svg" alt="product_arrow"/>
+                                            <Image className={dropdownStyles['dropdown-product-info-title-icon']}
+                                                   width={15} height={0}
+                                                   src="/assets/header/arrow-product.svg" alt="product_arrow"/>
                                         </div>
                                     </div>
                                 </div>
@@ -121,8 +131,9 @@ const Header = () => {
                                     <div className={dropdownStyles['dropdown-product-info']}>
                                         <div className={dropdownStyles['dropdown-product-info-title']}>
                                             <span>Virtual servers</span>
-                                            <Image className={dropdownStyles['dropdown-product-info-title-icon']} width={15} height={0}
-                                                 src="/assets/header/arrow-product.svg" alt="product_arrow"/>
+                                            <Image className={dropdownStyles['dropdown-product-info-title-icon']}
+                                                   width={15} height={0}
+                                                   src="/assets/header/arrow-product.svg" alt="product_arrow"/>
                                         </div>
                                     </div>
                                 </div>
@@ -139,7 +150,7 @@ const Header = () => {
             </div>
             <div className={styles['authentication']}>
                 <span>Log In</span>
-                <button>Get Started</button>
+                <button className="orange-btn">Get Started</button>
             </div>
         </header>
     );

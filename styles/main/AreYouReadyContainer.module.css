@@ -20,20 +20,3 @@
     align-items: flex-start;
     gap: 24px;
 }
-
-.container div button {
-    display: flex;
-    padding: 12px 48px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 30px;
-    border: 1px solid #CCDAE7;
-    background: linear-gradient(92deg, #1365ea 0.83%, rgba(29, 150, 232, 0.78) 95.33%);
-    cursor: pointer;
-    color: #fff;
-}
-
-.container div button:hover {
-    border-radius: 30px;
-    background: linear-gradient(92deg, #186efa 0.83%, rgba(33, 160, 246, 0.78) 95.33%);}

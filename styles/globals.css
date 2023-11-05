@@ -2,7 +2,6 @@
 @import "header/Header.module.css";
 @import "header/Header-dropdown-item.module.css";
 @import "./main/NavContainer.module.css";
-@import "./main/Statistics.module.css";
 @import "main/GlobalInformation.module.css";
 @import "main/OurProducts.module.css";
 
@@ -16,10 +15,10 @@
 body {
     width: 100vw;
     height: 100vh;
-    background: var(--header-bg); /*TODO remove*/
+    background: var(--header-bg);
     display: flex;
     justify-content: center;
-    overflow-x: hidden; /*TODO remove*/
+    overflow-x: hidden;
 }
 
 .container {
@@ -45,4 +44,22 @@ body {
 
 .orange-btn:hover {
     border: 1px solid black;
+}
+
+.blue-btn {
+    display: flex;
+    padding: 12px 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+    border: 1px solid #CCDAE7;
+    background: linear-gradient(92deg, #1365ea 0.83%, rgba(29, 150, 232, 0.78) 95.33%);
+    cursor: pointer;
+    color: #fff;
+}
+
+.blue-btn:hover {
+    border-radius: 30px;
+    background: linear-gradient(92deg, #186efa 0.83%, rgba(33, 160, 246, 0.78) 95.33%);
 }

@@ -1,0 +1,89 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: nowrap column;
+    gap: 49px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.container .info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 80px;
+    align-items: flex-start;
+}
+
+.container .info-container div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-flow: column nowrap;
+    gap: 12px;
+}
+
+.container .info-container div h4 {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.384px;
+    padding-bottom: 4px;
+}
+
+.container .info-container div p {
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.336px;
+    max-width: 292px;
+    cursor: pointer;
+}
+
+
+.container .info-container .subscribe .email-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row nowrap;
+    gap: 16px;
+    padding-top: 8px;
+}
+
+.container .info-container .subscribe .email-btn input {
+    width: 252px;
+    height: 48px;
+    border-radius: 32px;
+    border: 1px solid #CCDAE7;
+    padding: 15px 24px;
+    background: var(--app-color);
+    color: #fff;
+}
+
+.container .info-container .subscribe .email-btn input::placeholder {
+    color: #fff;
+}
+
+.container .copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+    max-width: 1200px;
+    width: 100%;
+    border-top: 1px solid #ccc;
+}
+
+.container .copyright p {
+    padding-top: 16px;
+    color: #C1C1C1;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

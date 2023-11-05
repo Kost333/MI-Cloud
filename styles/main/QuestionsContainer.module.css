@@ -49,6 +49,7 @@
     border-bottom: 1px solid #CCDAE7;
     min-width: 742px;
     padding: 28px;
+    cursor: pointer;
 }
 
 .container .info-container div p {
