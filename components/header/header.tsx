@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "../../styles/Header.module.css";
-import dropdownStyles from "../../styles/Header-dropdown-item.module.css";
+import styles from "../../styles/header/Header.module.css";
+import dropdownStyles from "../../styles/header/Header-dropdown-item.module.css";
 
 const generateArray = (length: number = 1) => new Array(length).fill(0);
 

@@ -1,0 +1,23 @@
+.out-products-container {
+    display: flex;
+    gap: 24px;
+    column-gap: 24px;
+    flex-wrap: wrap;
+}
+.out-products-container .out_product {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    padding: 40px 24px;
+    border-radius: 8px;
+    flex: 1 1 32%;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid #212E74;
+}
+
+.out-products-container .out_product span {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+}

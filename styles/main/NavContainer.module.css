@@ -1,0 +1,39 @@
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    justify-content: space-between;
+}
+
+.nav-container .nav-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.nav-container .nav-info-container h1 {
+    color: #23226E;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 65px;
+}
+
+.nav-container .nav-info-container h2 {
+    color: #23226E;
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 65px;
+}
+
+.nav-container .nav-info-container p {
+    color: #606F8C;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+    letter-spacing: -0.16px;
+}
+
+/*model-viewer {*/
+/*    width: 500px;*/
+/*    height: 500px;*/
+/*}*/
