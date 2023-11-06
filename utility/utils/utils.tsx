@@ -40,17 +40,5 @@ export const products = [
         title: "Virtual servers",
         description: "with GPUs",
         description1: "Scalable solution in 1 minute on NVMe drives"
-    },
-    {
-        id: 4,
-        title: "Virtual servers",
-        description: "with GPUs",
-        description1: "Scalable solution in 1 minute on NVMe drives"
-    },
-    {
-        id: 5,
-        title: "Virtual servers",
-        description: "with GPUs",
-        description1: "Scalable solution in 1 minute on NVMe drives"
-    },
+    }
 ]
