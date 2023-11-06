@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "@/styles/main/NavContainer.module.css";
+import Image from "next/image";
+
 
 const NavContainer = () => {
 
@@ -13,7 +15,7 @@ const NavContainer = () => {
                 </div>
                 <button className="orange-btn">Get Started</button>
             </div>
-
+            <Image src="/assets/globe.svg" alt="globe" width={400} height={400}/>
         </nav>
     );
 

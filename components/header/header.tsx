@@ -2,11 +2,7 @@ import React from "react";
 import styles from "../../styles/header/Header.module.css";
 import dropdownStyles from "../../styles/header/Header-dropdown-item.module.css";
 import Image from 'next/image';
-
-const generateArray = (length: number = 1) => new Array(length).fill(0);
-
-const productsArray = generateArray(6);
-const servicesArray = generateArray(3);
+import {products} from "@/utility/utils/utils";
 
 const Header = () => {
 
@@ -23,49 +19,22 @@ const Header = () => {
                         <div className={styles['dropdown-content']}>
                             <div className={styles['dropdown-visible-content']}>
                                 <div>
-                                    {productsArray.slice(0, 3).map((_, index) => (
-                                        <div key={index} className={dropdownStyles['dropdown-product-container']}>
+                                    {products.map((product) => (
+                                        <div key={product.id} className={dropdownStyles['dropdown-product-container']}>
                                             <div className={dropdownStyles['dropdown-product-logo']}>
                                                 <Image src="/assets/header/product.svg" alt="product" width={96}
                                                        height={91}/>
                                             </div>
                                             <div className={dropdownStyles['dropdown-product-info']}>
                                                 <div className={dropdownStyles['dropdown-product-info-title']}>
-                                                    <span>Virtual servers</span>
+                                                    <span>{product.title}</span>
                                                     <Image
                                                         className={dropdownStyles['dropdown-product-info-title-icon']}
                                                         width={15} height={0}
                                                         src="/assets/header/arrow-product.svg" alt="product_arrow"/>
                                                 </div>
-                                                <p className={dropdownStyles['dropdown-product-info-description']}>with
-                                                    GPUs</p>
-                                                <p className={dropdownStyles['dropdown-product-info-description']}>Adjust
-                                                    resources and workloads
-                                                    with our virtual servers.</p>
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-                                <div>
-                                    {productsArray.slice(3, 6).map((_, index) => (
-                                        <div key={index} className={dropdownStyles['dropdown-product-container']}>
-                                            <div className={dropdownStyles['dropdown-product-logo']}>
-                                                <Image src="/assets/header/product.svg" alt="product" width={96}
-                                                       height={91}/>
-                                            </div>
-                                            <div className={dropdownStyles['dropdown-product-info']}>
-                                                <div className={dropdownStyles['dropdown-product-info-title']}>
-                                                    <span>Virtual servers</span>
-                                                    <Image
-                                                        className={dropdownStyles['dropdown-product-info-title-icon']}
-                                                        width={15} height={0}
-                                                        src="/assets/header/arrow-product.svg" alt="product_arrow"/>
-                                                </div>
-                                                <p className={dropdownStyles['dropdown-product-info-description']}>with
-                                                    GPUs</p>
-                                                <p className={dropdownStyles['dropdown-product-info-description']}>Adjust
-                                                    resources and workloads
-                                                    with our virtual servers.</p>
+                                                <p className={dropdownStyles['dropdown-product-info-description']}>{product.description}</p>
+                                                <p className={dropdownStyles['dropdown-product-info-description']}>{product.description1}</p>
                                             </div>
                                         </div>
                                     ))}
@@ -78,24 +47,21 @@ const Header = () => {
                         <div className={styles['dropdown-icon']}></div>
                         <div className={styles['dropdown-content']}>
                             <div className={styles['dropdown-visible-content']}>
-                                {servicesArray.map((_, index) => (
-                                    <div key={index} className={dropdownStyles['dropdown-product-container']}>
+                                {products.map((product) => (
+                                    <div key={product.id} className={dropdownStyles['dropdown-product-container']}>
                                         <div className={dropdownStyles['dropdown-product-logo']}>
                                             <Image src="/assets/header/product.svg" alt="product" width={96}
                                                    height={91}/>
                                         </div>
                                         <div className={dropdownStyles['dropdown-product-info']}>
                                             <div className={dropdownStyles['dropdown-product-info-title']}>
-                                                <span>Virtual servers</span>
+                                                <span>{product.title}</span>
                                                 <Image className={dropdownStyles['dropdown-product-info-title-icon']}
                                                        width={15} height={0}
                                                        src="/assets/header/arrow-product.svg" alt="product_arrow"/>
                                             </div>
-                                            <p className={dropdownStyles['dropdown-product-info-description']}>with
-                                                GPUs</p>
-                                            <p className={dropdownStyles['dropdown-product-info-description']}>Adjust
-                                                resources and workloads
-                                                with our virtual servers.</p>
+                                            <p className={dropdownStyles['dropdown-product-info-description']}>{product.description}</p>
+                                            <p className={dropdownStyles['dropdown-product-info-description']}>{product.description1}</p>
                                         </div>
                                     </div>
                                 ))}
@@ -107,36 +73,20 @@ const Header = () => {
                         <div className={styles['dropdown-icon']}></div>
                         <div className={styles['dropdown-content']}>
                             <div className={`${styles['dropdown-visible-content']} ${styles['dropdown-link-content']}`}>
-                                <div className={dropdownStyles['dropdown-product-link-container']}>
-                                    <div className={dropdownStyles['dropdown-product-info']}>
-                                        <div className={dropdownStyles['dropdown-product-info-title']}>
-                                            <span>Virtual servers</span>
-                                            <Image className={dropdownStyles['dropdown-product-info-title-icon']}
-                                                   width={96} height={91}
-                                                   src="/assets/header/arrow-product.svg" alt="product_arrow"/>
+                                {
+                                    products.map((item) => (
+                                        <div key={item.id} className={dropdownStyles['dropdown-product-link-container']}>
+                                            <div className={dropdownStyles['dropdown-product-info']}>
+                                                <div className={dropdownStyles['dropdown-product-info-title']}>
+                                                    <span>{item.title}</span>
+                                                    <Image className={dropdownStyles['dropdown-product-info-title-icon']}
+                                                           width={96} height={91}
+                                                           src="/assets/header/arrow-product.svg" alt="product_arrow"/>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div className={dropdownStyles['dropdown-product-link-container']}>
-                                    <div className={dropdownStyles['dropdown-product-info']}>
-                                        <div className={dropdownStyles['dropdown-product-info-title']}>
-                                            <span>Virtual servers</span>
-                                            <Image className={dropdownStyles['dropdown-product-info-title-icon']}
-                                                   width={15} height={0}
-                                                   src="/assets/header/arrow-product.svg" alt="product_arrow"/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className={dropdownStyles['dropdown-product-link-container']}>
-                                    <div className={dropdownStyles['dropdown-product-info']}>
-                                        <div className={dropdownStyles['dropdown-product-info-title']}>
-                                            <span>Virtual servers</span>
-                                            <Image className={dropdownStyles['dropdown-product-info-title-icon']}
-                                                   width={15} height={0}
-                                                   src="/assets/header/arrow-product.svg" alt="product_arrow"/>
-                                        </div>
-                                    </div>
-                                </div>
+                                    ))
+                                }
                             </div>
                         </div>
                     </li>

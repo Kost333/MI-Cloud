@@ -1,8 +1,25 @@
-import React from "react";
+import React, {useState} from "react";
 import styles from "@/styles/main/WhatCanWeContainer.module.css";
 import Image from "next/image";
+import arrowRight from "../../public/assets/arrowRight.svg";
+import arrowDown from "../../public/assets/arrowDown.svg";
+import {services} from "@/utility/utils/utils";
+
+interface Service {
+    id: number;
+    title: string;
+    description: string;
+    backgroundImage: string;
+    serviceLogo: string;
+}
 
 const WhatCanWeContainer = () => {
+
+    const [openedItem, setOpenedItem] = useState(services[0]);
+
+    const openItem = (service: Service) => {
+        setOpenedItem(service)
+    }
 
     return (
         <div className={styles["container"]}>
@@ -16,28 +33,43 @@ const WhatCanWeContainer = () => {
                 </p>
             </div>
             <div className={styles["info-container"]}>
-                <div>
-                    <div>
-                        <Image src="/assets/Support.svg" alt="Support" width={18} height={17}/>
-                        <h3>Administration</h3>
-                        <Image src="/assets/arrow.svg" alt="arrow" width={24} height={24}/>
-                    </div>
-                    <div>
-                        <Image src="/assets/Support.svg" alt="Support" width={18} height={17}/>
-                        <h3>Support</h3>
-                        <Image src="/assets/arrow.svg" alt="arrow" width={24} height={24}/>
-                    </div>
-                    <div>
-                        <Image src="/assets/Support.svg" alt="Support" width={18} height={17}/>
-                        <h3>IP Announcement</h3>
-                        <Image src="/assets/arrow.svg" alt="arrow" width={24} height={24}/>
-                    </div>
+                <div className={styles["services"]}>
+                    {
+                        services.map(service => {
+                            return (
+                                <div className={styles["service"]} key={service.id} onClick={() => openItem(service)}>
+                                    <div className={styles['service-title-container']}>
+                                        <Image src={service.serviceLogo} alt="serviceLogo" width={18} height={17}/>
+                                        <h3>{service.title}</h3>
+                                        <Image src={openedItem.id === service.id ? arrowDown : arrowRight}
+                                               alt="arrow right"
+                                               width={24} height={24}/>
+                                    </div>
+                                    {openedItem.id === service.id &&
+                                        <div className={styles['dropdown-content']}>
+                                            <div><p>{service.description}</p></div>
+                                            <div className={styles['dropdown-content-seeMore']}>See more</div>
+                                        </div>
+                                    }
+                                </div>
+                            )
+                        })
+                    }
                 </div>
-                <Image src="/assets/aboutUs.svg" alt="about us" width={675} height={544}/>
+                {
+                    services.map(service => {
+                        return (
+                            <div key={service.id}>
+                                {openedItem.id === service.id &&
+                                    <Image src={service.backgroundImage} alt="services" width={674} height={544}/>
+                                }
+                            </div>
+                        )
+                    })
+                }
             </div>
         </div>
     );
-
 };
 
 export default WhatCanWeContainer;

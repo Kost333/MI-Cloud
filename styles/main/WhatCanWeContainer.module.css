@@ -38,24 +38,26 @@
     display: flex;
     justify-content: space-between;
     width: 90%;
+    gap: 40px;
 }
 
-.container .info-container div {
+.container .info-container .services {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-flow: column nowrap;
     gap: 18px;
 }
 
-.container .info-container div div {
+
+.container .info-container .services .service {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-flow: row nowrap;
+    flex-flow: column;
     padding: 38px 30px;
     border: 1px #FFF solid;
-    min-width: 368px;
+    width: 368px;
     border-radius: 8px;
     color: #FFF;
     font-size: 16px;
@@ -64,4 +66,28 @@
     line-height: normal;
     letter-spacing: -0.4px;
     cursor: pointer;
+    gap: 15px;
+}
+
+.service-title-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.dropdown-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dropdown-content-seeMore {
+    text-align: end;
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
 }
