@@ -12,8 +12,9 @@ const OurProducts = () => {
             </div>
             <div className={styles["our-products-content"]}>
                 <div className={styles["our-products-card"]}>
-                    <Image className={styles["our-products-card-image"]} src="/assets/header/product.svg" width={168} height={260}
-                         alt="our-products_card_image"/>
+                    <Image className={styles["our-products-card-image"]} src="/assets/header/product.svg" width={168}
+                           height={260}
+                           alt="our-products_card_image"/>
                     <div className={styles["our-products-card-info-container"]}>
                         <span className={styles["our-products-card-info-title"]}>Virtual servers</span>
                         <span className={styles["our-products-card-info-description"]}>Lorem ipsum dolor sit amet consectetur. Ac in nunc in nulla eu bibendum risus viverra.</span>
@@ -23,8 +24,9 @@ const OurProducts = () => {
                     </div>
                 </div>
                 <div className={styles["our-products-card"]}>
-                    <Image className={styles["our-products-card-image"]} src="/assets/header/product.svg" width={168} height={260}
-                         alt="our-products_card_image"/>
+                    <Image className={styles["our-products-card-image"]} src="/assets/header/product.svg" width={168}
+                           height={260}
+                           alt="our-products_card_image"/>
                     <div className={styles["our-products-card-info-container"]}>
                         <span className={styles["our-products-card-info-title"]}>Virtual servers</span>
                         <span className={styles["our-products-card-info-description"]}>Lorem ipsum dolor sit amet consectetur. Ac in nunc in nulla eu bibendum risus viverra.</span>
@@ -34,8 +36,9 @@ const OurProducts = () => {
                     </div>
                 </div>
                 <div className={styles["our-products-card"]}>
-                    <Image className={styles["our-products-card-image"]} src="/assets/header/product.svg" width={168} height={260}
-                         alt="our-products_card_image"/>
+                    <Image className={styles["our-products-card-image"]} src="/assets/header/product.svg" width={168}
+                           height={260}
+                           alt="our-products_card_image"/>
                     <div className={styles["our-products-card-info-container"]}>
                         <span className={styles["our-products-card-info-title"]}>Virtual servers</span>
                         <span className={styles["our-products-card-info-description"]}>Lorem ipsum dolor sit amet consectetur. Ac in nunc in nulla eu bibendum risus viverra.</span>
@@ -45,8 +48,9 @@ const OurProducts = () => {
                     </div>
                 </div>
                 <div className={styles["our-products-card"]}>
-                    <Image className={styles["our-products-card-image"]} src="/assets/header/product.svg" width={168} height={260}
-                         alt="our-products_card_image"/>
+                    <Image className={styles["our-products-card-image"]} src="/assets/header/product.svg" width={168}
+                           height={260}
+                           alt="our-products_card_image"/>
                     <div className={styles["our-products-card-info-container"]}>
                         <span className={styles["our-products-card-info-title"]}>Virtual servers</span>
                         <span className={styles["our-products-card-info-description"]}>Lorem ipsum dolor sit amet consectetur. Ac in nunc in nulla eu bibendum risus viverra.</span>
@@ -56,8 +60,9 @@ const OurProducts = () => {
                     </div>
                 </div>
                 <div className={styles["our-products-card"]}>
-                    <Image className={styles["our-products-card-image"]} src="/assets/header/product.svg" width={168} height={260}
-                         alt="our-products_card_image"/>
+                    <Image className={styles["our-products-card-image"]} src="/assets/header/product.svg" width={168}
+                           height={260}
+                           alt="our-products_card_image"/>
                     <div className={styles["our-products-card-info-container"]}>
                         <span className={styles["our-products-card-info-title"]}>Virtual servers</span>
                         <span className={styles["our-products-card-info-description"]}>Lorem ipsum dolor sit amet consectetur. Ac in nunc in nulla eu bibendum risus viverra.</span>
@@ -67,8 +72,9 @@ const OurProducts = () => {
                     </div>
                 </div>
                 <div className={styles["our-products-card"]}>
-                    <Image className={styles["our-products-card-image"]} src="/assets/header/product.svg" width={168} height={260}
-                         alt="our-products_card_image"/>
+                    <Image className={styles["our-products-card-image"]} src="/assets/header/product.svg" width={168}
+                           height={260}
+                           alt="our-products_card_image"/>
                     <div className={styles["our-products-card-info-container"]}>
                         <span className={styles["our-products-card-info-title"]}>Virtual servers</span>
                         <span className={styles["our-products-card-info-description"]}>Lorem ipsum dolor sit amet consectetur. Ac in nunc in nulla eu bibendum risus viverra.</span>

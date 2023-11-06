@@ -8,27 +8,27 @@ const GlobalInformation = () => {
         <div className={styles["global-information-container"]}>
             <div className={styles["global-information"]}>
                 <Image src="/assets/global-information-1.svg" alt="global-information" width={39} height={45}/>
-                    <span>99.9% Uptime Guarantee</span>
+                <span>99.9% Uptime Guarantee</span>
             </div>
             <div className={styles["global-information"]}>
                 <Image src="/assets/global-information-1.svg" alt="global-information" width={39} height={45}/>
-                    <span>99.9% Uptime Guarantee</span>
+                <span>99.9% Uptime Guarantee</span>
             </div>
             <div className={styles["global-information"]}>
                 <Image src="/assets/global-information-1.svg" alt="global-information" width={39} height={45}/>
-                    <span>99.9% Uptime Guarantee</span>
+                <span>99.9% Uptime Guarantee</span>
             </div>
             <div className={styles["global-information"]}>
                 <Image src="/assets/global-information-1.svg" alt="global-information" width={39} height={45}/>
-                    <span>99.9% Uptime Guarantee</span>
+                <span>99.9% Uptime Guarantee</span>
             </div>
             <div className={styles["global-information"]}>
                 <Image src="/assets/global-information-1.svg" alt="global-information" width={39} height={45}/>
-                    <span>99.9% Uptime Guarantee</span>
+                <span>99.9% Uptime Guarantee</span>
             </div>
             <div className={styles["global-information"]}>
                 <Image src="/assets/global-information-1.svg" alt="global-information" width={39} height={45}/>
-                    <span>99.9% Uptime Guarantee</span>
+                <span>99.9% Uptime Guarantee</span>
             </div>
         </div>
     );

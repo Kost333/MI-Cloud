@@ -4,7 +4,6 @@ import Image from "next/image";
 
 
 const NavContainer = () => {
-
     return (
         <nav className={styles["nav-container"]}>
             <div className={styles["nav-info-container"]}>
@@ -18,7 +17,6 @@ const NavContainer = () => {
             <Image src="/assets/globe.svg" alt="globe" width={400} height={400}/>
         </nav>
     );
-
 };
 
 export default NavContainer;

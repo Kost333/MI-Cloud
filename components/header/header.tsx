@@ -73,20 +73,18 @@ const Header = () => {
                         <div className={styles['dropdown-icon']}></div>
                         <div className={styles['dropdown-content']}>
                             <div className={`${styles['dropdown-visible-content']} ${styles['dropdown-link-content']}`}>
-                                {
-                                    products.map((item) => (
-                                        <div key={item.id} className={dropdownStyles['dropdown-product-link-container']}>
-                                            <div className={dropdownStyles['dropdown-product-info']}>
-                                                <div className={dropdownStyles['dropdown-product-info-title']}>
-                                                    <span>{item.title}</span>
-                                                    <Image className={dropdownStyles['dropdown-product-info-title-icon']}
-                                                           width={96} height={91}
-                                                           src="/assets/header/arrow-product.svg" alt="product_arrow"/>
-                                                </div>
+                                {products.map((item) => (
+                                    <div key={item.id} className={dropdownStyles['dropdown-product-link-container']}>
+                                        <div className={dropdownStyles['dropdown-product-info']}>
+                                            <div className={dropdownStyles['dropdown-product-info-title']}>
+                                                <span>{item.title}</span>
+                                                <Image className={dropdownStyles['dropdown-product-info-title-icon']}
+                                                       width={96} height={91}
+                                                       src="/assets/header/arrow-product.svg" alt="product_arrow"/>
                                             </div>
                                         </div>
-                                    ))
-                                }
+                                    </div>
+                                ))}
                             </div>
                         </div>
                     </li>
