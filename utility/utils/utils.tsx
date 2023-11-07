@@ -59,32 +59,32 @@ export const globalInformation = [
     {
         id: 1,
         title: "99.9% Uptime Guarantee",
-        image: "/assets/global-information-1.svg",
+        image: "/assets/global-information/global-information-1.svg",
     },
     {
         id: 2,
         title: "SSD M.2",
-        image: "/assets/global-information-2.svg",
+        image: "/assets/global-information/global-information-2.svg",
     },
     {
         id: 3,
         title: "Unlimited Bandwidth",
-        image: "/assets/global-information-3.svg",
+        image: "/assets/global-information/global-information-3.svg",
     },
     {
         id: 4,
         title: "Cyber Defense",
-        image: "/assets/global-information-4.svg",
+        image: "/assets/global-information/global-information-4.svg",
     },
     {
         id: 5,
         title: "Our Value for Money",
-        image: "/assets/global-information-5.svg",
+        image: "/assets/global-information/global-information-5.svg",
     },
     {
         id: 6,
         title: "Free Product Packs",
-        image: "/assets/global-information-6.svg",
+        image: "/assets/global-information/global-information-6.svg",
     }
 ]
 
