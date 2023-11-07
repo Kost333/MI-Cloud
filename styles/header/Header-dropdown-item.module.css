@@ -4,6 +4,7 @@
     border-bottom: 1px solid #E3E3E3;
     padding-bottom: 24px;
     gap: 24px;
+    width: calc((100% - 52px) / 3);
 }
 
 .dropdown-product-link-container {
@@ -12,6 +13,8 @@
     border-bottom: 1px solid #E3E3E3;
     padding-bottom: 12px;
     gap: 24px;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .dropdown-product-info .dropdown-product-info-title .dropdown-product-info-title-icon {
@@ -45,6 +48,7 @@
     display: flex;
     gap: 5px;
     align-items: center;
+    justify-content: space-between;
 }
 
 .dropdown-product-container .dropdown-product-info .dropdown-product-info-description {

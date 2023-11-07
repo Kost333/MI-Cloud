@@ -60,6 +60,7 @@
 .header .menu ul .dropdown-container .dropdown-content .dropdown-visible-content > div {
     flex: 1;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .header .menu ul .dropdown-container .dropdown-content .dropdown-link-content {

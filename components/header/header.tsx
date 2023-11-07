@@ -2,7 +2,8 @@ import React from "react";
 import styles from "../../styles/header/Header.module.css";
 import dropdownStyles from "../../styles/header/Header-dropdown-item.module.css";
 import Image from 'next/image';
-import {products} from "@/utility/utils/utils";
+import {services} from "@/utility/utils/utils";
+import DropdownProducts from "@/components/header/DropdownProducts";
 
 const Header = () => {
 
@@ -18,27 +19,7 @@ const Header = () => {
                         <div className={styles['dropdown-icon']}></div>
                         <div className={styles['dropdown-content']}>
                             <div className={styles['dropdown-visible-content']}>
-                                <div>
-                                    {products.map((product) => (
-                                        <div key={product.id} className={dropdownStyles['dropdown-product-container']}>
-                                            <div className={dropdownStyles['dropdown-product-logo']}>
-                                                <Image src="/assets/header/product.svg" alt="product" width={96}
-                                                       height={91}/>
-                                            </div>
-                                            <div className={dropdownStyles['dropdown-product-info']}>
-                                                <div className={dropdownStyles['dropdown-product-info-title']}>
-                                                    <span>{product.title}</span>
-                                                    <Image
-                                                        className={dropdownStyles['dropdown-product-info-title-icon']}
-                                                        width={15} height={0}
-                                                        src="/assets/header/arrow-product.svg" alt="product_arrow"/>
-                                                </div>
-                                                <p className={dropdownStyles['dropdown-product-info-description']}>{product.description}</p>
-                                                <p className={dropdownStyles['dropdown-product-info-description']}>{product.description1}</p>
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
+                                <DropdownProducts/>
                             </div>
                         </div>
                     </li>
@@ -47,24 +28,7 @@ const Header = () => {
                         <div className={styles['dropdown-icon']}></div>
                         <div className={styles['dropdown-content']}>
                             <div className={styles['dropdown-visible-content']}>
-                                {products.map((product) => (
-                                    <div key={product.id} className={dropdownStyles['dropdown-product-container']}>
-                                        <div className={dropdownStyles['dropdown-product-logo']}>
-                                            <Image src="/assets/header/product.svg" alt="product" width={96}
-                                                   height={91}/>
-                                        </div>
-                                        <div className={dropdownStyles['dropdown-product-info']}>
-                                            <div className={dropdownStyles['dropdown-product-info-title']}>
-                                                <span>{product.title}</span>
-                                                <Image className={dropdownStyles['dropdown-product-info-title-icon']}
-                                                       width={15} height={0}
-                                                       src="/assets/header/arrow-product.svg" alt="product_arrow"/>
-                                            </div>
-                                            <p className={dropdownStyles['dropdown-product-info-description']}>{product.description}</p>
-                                            <p className={dropdownStyles['dropdown-product-info-description']}>{product.description1}</p>
-                                        </div>
-                                    </div>
-                                ))}
+                                <DropdownProducts/>
                             </div>
                         </div>
                     </li>
@@ -73,7 +37,7 @@ const Header = () => {
                         <div className={styles['dropdown-icon']}></div>
                         <div className={styles['dropdown-content']}>
                             <div className={`${styles['dropdown-visible-content']} ${styles['dropdown-link-content']}`}>
-                                {products.map((item) => (
+                                {services.map((item) => (
                                     <div key={item.id} className={dropdownStyles['dropdown-product-link-container']}>
                                         <div className={dropdownStyles['dropdown-product-info']}>
                                             <div className={dropdownStyles['dropdown-product-info-title']}>
