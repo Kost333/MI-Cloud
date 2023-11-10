@@ -7,7 +7,7 @@
 
 .second-content {
     padding: 500px 120px 17px 120px;
-    background-image: url("../public/assets/second-content-bg.svg") ;
+    background-image: url("../public/assets/second-content-bg.svg");
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;

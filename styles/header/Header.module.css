@@ -1,50 +1,122 @@
 .header {
-    width: 100%;
-    height: 79px;
-    padding: 17px 120px;
-    background: var(--header-bg);
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 999;
+    background: var(--header-bg);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    z-index: 99;
+    min-height: 60px;
 }
 
-.header .menu ul {
+.menu-mobile-wrapper {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 80%;
+    height: calc(100vh - 60px);
     display: flex;
-    gap: 32px;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 32px 16px;
 }
 
-.header .menu ul li {
-    list-style-type: none;
-    cursor: pointer;
+.menu-mobile-wrapper li {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.header .dropdown-icon {
+    width: 7px;
+    height: 7px;
+    margin: 11px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    transform: rotateZ(135deg);
+}
+
+.header .dropdown-icon_open {
+    transform: rotateZ(-45deg);
+}
+
+.menu-item-title {
+    transition: var(--animation-duration);
+}
+
+.authentication {
+    display: flex;
+    flex-direction: column-reverse;
+    column-gap: 8px;
+}
+
+.menu-mobile-wrapper .authentication {
+    margin-top: auto;
+}
+
+.tablet-menu {
     display: flex;
     align-items: center;
-    transition: var(--anumation-duration);
+    flex-direction: row;
 }
 
-.header .menu ul li span {
-    white-space: nowrap;
+.tablet-menu ul {
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 
-.header .menu ul li .menu-item-title {
-    transition: var(--anumation-duration);
+.tablet-menu li {
+    cursor: pointer;
+    position: relative;
 }
 
-.header .menu ul .menu-item:hover .menu-item-title {
+.tablet-menu li:hover .menu-item-title {
     color: var(--app-color);
 }
 
-.header .menu ul .dropdown-container .dropdown-content {
-    position: absolute;
-    left: 50%;
-    background: transparent;
-    width: max-content;
-    height: auto;
-    top: 50px;
-    transform: translateX(-50%);
+.dropdown-product-wrapper {
     display: none;
-    transition: var(--anumation-duration);
+    background-color: #fff;
+    position: absolute;
+    top: 30px;
+    width: max-content;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    padding: 12px;
+    min-width: 300px;
+    min-height: 280px;
+    height: auto;
+    transform: translateX(-20%);
+    transition: var(--animation-duration);
+    z-index: 9;
+    max-width: 1024px;
 }
+
+.tablet-menu li:hover .dropdown-product-wrapper {
+    display: flex;
+}
+
+@media (min-width: 1024px) {
+    .header {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        justify-content: space-between;
+    }
+
+    .authentication {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1280px) {
+    .header {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
 
 .header .menu ul .dropdown-container .dropdown-content .dropdown-visible-content {
     margin-top: 30px;
@@ -60,7 +132,6 @@
 .header .menu ul .dropdown-container .dropdown-content .dropdown-visible-content > div {
     flex: 1;
     display: flex;
-    flex-wrap: wrap;
 }
 
 .header .menu ul .dropdown-container .dropdown-content .dropdown-link-content {
@@ -81,28 +152,9 @@
 }
 
 .header .menu ul .dropdown-container .dropdown-icon {
-    width: 7px;
-    height: 7px;
     margin: 11px;
-    border-top: 1px solid black;
-    border-right: 1px solid black;
     transform: rotateZ(135deg);
-}
-
-.header .menu ul .dropdown-container .dropdown-icon {
-    width: 7px;
-    height: 7px;
-    margin: 11px;
-    border-top: 1px solid black;
-    border-right: 1px solid black;
-    transform: rotateZ(135deg);
-    transition: var(--anumation-duration);
-}
-
-.header .authentication {
-    display: flex;
-    gap: 24px;
-    align-items: center;
+    transition: var(--animation-duration);
 }
 
 .header .authentication span {
@@ -110,16 +162,6 @@
     font-size: 16px;
     font-weight: 400;
     cursor: pointer;
-    transition: var(--anumation-duration);
+    transition: var(--animation-duration);
     white-space: nowrap;
-}
-
-.header .authentication span:hover {
-    color: var(--app-color);
-}
-
-@media (min-width: 768px) {
-    .header .menu ul .dropdown-container .dropdown-content {
-        max-width: 1024px;
-    }
 }

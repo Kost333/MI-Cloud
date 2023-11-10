@@ -13,8 +13,10 @@ const TheEasiestWayContainer = () => {
                     servers.map((server) => (
                         <div key={server.id} className={styles["info"]}>
                             <Image src={server.image} alt="signUpFile" width={48} height={58}/>
-                            <h4>{server.title}</h4>
-                            <p>{server.description}</p>
+                            <div className={styles["description"]}>
+                                <h4>{server.title}</h4>
+                                <p>{server.description}</p>
+                            </div>
                         </div>
                     ))
                 }

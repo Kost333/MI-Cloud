@@ -78,3 +78,9 @@
     font-weight: 300;
     line-height: normal;
 }
+
+@media (max-width: 1024px) {
+    .container .info-container {
+        flex-direction: column;
+    }
+}

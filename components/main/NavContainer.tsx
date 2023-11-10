@@ -14,7 +14,12 @@ const NavContainer = () => {
                 </div>
                 <button className="orange-btn">Get Started</button>
             </div>
-            <Image src="/assets/globe.svg" alt="globe" width={400} height={400}/>
+            <Image src="/assets/globe.svg"
+                   alt="globe"
+                   width={400}
+                   height={400}
+                   layout="responsive"
+                   style={{maxWidth: "400px", maxHeight: "400px"}}/>
         </nav>
     );
 };
