@@ -1,6 +1,6 @@
 @import "./variables.css";
 @import "header/Header.module.css";
-@import "header/Header-dropdown-item.module.css";
+@import "header/HeaderDropdownItem.module.css";
 @import "./main/NavContainer.module.css";
 @import "main/GlobalInformation.module.css";
 @import "main/OurProducts.module.css";

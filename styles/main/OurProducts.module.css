@@ -47,7 +47,7 @@
 .our-products-container .our-products-content .our-products-card .our-products-card-image {
     align-self: center;
     width: 140px;
-    transition: var(--anumation-duration);
+    transition: var(--animation-duration);
 }
 
 .our-products-container .our-products-content .our-products-card .our-products-card-info-container {
@@ -55,7 +55,7 @@
     flex-direction: column;
     gap: 24px;
     position: relative;
-    transition: var(--anumation-duration);
+    transition: var(--animation-duration);
     top: 30px;
 }
 

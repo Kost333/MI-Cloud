@@ -34,7 +34,7 @@
     letter-spacing: -0.16px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .nav-container {
         flex-direction: column;
         gap: 32px;

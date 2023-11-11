@@ -1,58 +1,27 @@
 import React, {useEffect, useState} from "react";
 import styles from "@/styles/main/QuestionsContainer.module.css";
 import Image from "next/image";
-
-type QuestionType = {
-    id: number | string;
-    title: string,
-    answer: string,
-    opened: boolean
-}
+import {questionsStandard} from "@/utility/utils";
+import {QuestionType} from "@/types/types";
 
 const QuestionsContainer = () => {
-    const [questions, setQuestions] = useState([] as QuestionType[]);
+    const [questions, setQuestions] = useState<QuestionType[]>([]);
 
     useEffect(() => {
-        setQuestions([
-            {
-                id: 1,
-                title: 'What do you need to get started?',
-                answer: 'You can access your hosting services using your username and password that you receive after signing up. You can also use our web-based control panel to manage your hosting services.',
-                opened: false
-            },
-            {
-                id: 2,
-                title: 'What do you need to get started?',
-                answer: 'You can access your hosting services using your username and password that you receive after signing up. You can also use our web-based control panel to manage your hosting services.',
-                opened: false
-
-            },
-            {
-                id: 3,
-                title: 'What do you need to get started?',
-                answer: 'You can access your hosting services using your username and password that you receive after signing up. You can also use our web-based control panel to manage your hosting services.',
-                opened: false
-            },
-            {
-                id: 4,
-                title: 'What do you need to get started?',
-                answer: 'You can access your hosting services using your username and password that you receive after signing up. You can also use our web-based control panel to manage your hosting services.',
-                opened: false
-            },
-        ])
+        setQuestions(questionsStandard)
     }, [])
 
 
     const toggleItem = (id: number | string) => {
-        const newArray = questions.map(question => {
+        const newQuestions = questions.map((question: QuestionType) => {
             if (question.id === id) {
                 question.opened = !question.opened
             }
 
-            return question
+            return question;
         })
 
-        setQuestions(newArray)
+        setQuestions(newQuestions);
     }
 
     return (
@@ -62,17 +31,17 @@ const QuestionsContainer = () => {
             <h3>questions</h3>
             <div className={styles["info-container"]}>
                 {
-                    questions.map(question => {
+                    questions.map((question: QuestionType) => {
                         const image = question.opened ? '/assets/minus.svg' : '/assets/plus.svg';
                         return (
-                            <div className={styles['questionContainer']} key={question.id}
+                            <div className={styles['question-container']} key={question.id}
                                  onClick={() => toggleItem(question.id)}>
-                                <div className={styles['questionTitle']}>
+                                <div className={styles['question-title']}>
                                     <p>{question.title}</p>
                                     <Image src={image} alt="action" width={17} height={16}/>
                                 </div>
                                 {question.opened &&
-                                    <div className={styles['questionAnswer']}><p>{question.answer}</p></div>
+                                    <div className={styles['question-answer']}><p>{question.answer}</p></div>
                                 }
                             </div>
                         )

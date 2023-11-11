@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "@/styles/main/FeaturedClientsStories.module.css"
 import Image from "next/image";
-import {clients} from "@/utility/utils/utils";
+import {clients} from "@/utility/utils";
+import {Clients} from "@/types/types";
 
 const FeaturedClientsStories = () => {
 
@@ -10,10 +11,10 @@ const FeaturedClientsStories = () => {
             <h2>Featured Clients Stories</h2>
             <div className={styles["info-container"]}>
                 {
-                    clients.map((client) => (
+                    clients.map((client: Clients) => (
                         <div key={client.id} className={styles["info"]}>
                             <div className={styles["stars"]}>
-                                {[...Array(5)].map((_, starIndex) => (
+                                {[...Array(5)].map((_, starIndex: number) => (
                                     <Image key={starIndex} src="/assets/Star 1.svg" alt="star" width={28} height={28}/>
                                 ))}
                             </div>

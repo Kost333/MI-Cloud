@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "@/styles/main/OurProducts.module.css";
 import Image from "next/image";
-import {ourProducts} from "@/utility/utils/utils";
+import {ourProducts} from "@/utility/utils";
+import {OurProducts} from "@/types/types";
 
 const OurProducts = () => {
 
@@ -13,7 +14,7 @@ const OurProducts = () => {
             </div>
             <div className={styles["our-products-content"]}>
                 {
-                    ourProducts.map((product) => (
+                    ourProducts.map((product: OurProducts) => (
                         <div key={product.id} className={styles["our-products-card"]}>
                             <Image className={styles["our-products-card-image"]} src={product.image} width={168}
                                    height={260}

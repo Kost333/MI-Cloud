@@ -1,7 +1,7 @@
 .dropdown-product {
     display: flex;
     align-items: center;
-    margin-top: 12px;
+    padding: 20px;
 }
 
 .dropdown-product-logo,

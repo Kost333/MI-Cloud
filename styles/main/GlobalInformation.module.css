@@ -4,6 +4,7 @@
     column-gap: 24px;
     flex-wrap: wrap;
 }
+
 .global-information-container .global-information {
     display: flex;
     gap: 16px;
@@ -20,4 +21,20 @@
     font-size: 24px;
     font-weight: 400;
     line-height: normal;
+}
+
+@media (max-width: 1024px) {
+    .global-information-container {
+        gap: 18px;
+        column-gap: 18px;
+    }
+
+    .global-information-container .global-information {
+        gap: 12px;
+        padding: 19px 18px;
+    }
+
+    .global-information-container .global-information span {
+        font-size: 14px;
+    }
 }
